@@ -1,0 +1,16 @@
+"routing": {
+  "rules": [
+    {
+      "type": "field",
+      "outboundTag": "Direct",
+      "ip": [
+        "geoip:cn",
+        "geoip:private",
+        "ext:cn.dat:cn",
+        "ext:private.dat:private",
+        "ext:geoip-only-cn-private.dat:cn",
+        "ext:geoip-only-cn-private.dat:private"
+      ]
+    }
+  ]
+}
